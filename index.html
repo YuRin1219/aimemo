@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>左メモ＆AIサイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- メモスペース -->
+        <div class="memo">
+            <h2>メモ</h2>
+            <textarea id="memoText" rows="10" placeholder="メモを入力してください"></textarea>
+            <button id="saveButton">保存</button>
+        </div>
+        <!-- AIスペース -->
+        <div class="ai">
+            <h2>AIに質問</h2>
+            <textarea id="aiPrompt" rows="5" placeholder="AIに質問する内容を入力してください"></textarea>
+            <button id="askButton">質問する</button>
+            <div id="aiResponse" aria-live="polite" role="region" aria-label="AIの応答"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
